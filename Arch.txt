@@ -1,0 +1,33 @@
+Goal: To create a setup in which multiple independent teams can develop a single application, test and deploy each package separately.
+
+Monorepo vs Polyrepo:
+Pros of Monorepo- Visibility, Dependency management, Consistency, Easier refactoring, Improved reusability
+Cons- poor Git performance
+
+Why One MonoRepo for all MicroFrontends:-
+  No need to publish a new version via a registry
+  Ensure version conflicts are avoided
+  deployment of scalable monorepos- only changed MFs
+  Isolation between individual domains and between microfrontends can be ensured via linting eg. Nx
+  To avoid having to constantly build and test the entire monorepo
+
+
+Yarn workspaces vs npm workspaces vs lerna vs Bazel vs Rush vs Nx
+https://www.libtrends.info/npm-compare/@microsoft/rush-vs-bolt-vs-lerna-vs-mondorepo-vs-nx
+
+Structure:
+  EXT-MCK-DOTCOM-FRONTEND
+    One MonoRepo for all MicroFrontends (GlobalFooter, Header etc)
+    Webpack 5 module federation (dynamic import from MFs in runtime)
+    NPM workspaces = Installation/Symlinking
+    Typescript
+    Lerna= Publish and version control
+
+  EXT-MCK-DESIGN-SYSTEM
+    Design tokens
+    UI components
+    Storybook
+    npm
+    Rollup
+    Typescript
+    github actions
