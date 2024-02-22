@@ -1,0 +1,167 @@
+What encryption is used in https
+Ans:
+HTTPS typically uses a combination of Transport Layer Security (TLS) protocol and its predecessor, Secure Sockets Layer (SSL), to encrypt the data transmitted between a web server and a client, providing a secure connection. The specific encryption algorithms used within TLS can vary, but they commonly include symmetric encryption, asymmetric encryption, and hashing functions to ensure data confidentiality, integrity, and authentication.
+
+
+Encryption algorithm in https
+Ans:
+The encryption algorithms commonly used in HTTPS include symmetric encryption algorithms such as Advanced Encryption Standard (AES), asymmetric encryption algorithms like RSA (Rivest-Shamir-Adleman), and key exchange algorithms such as Diffie-Hellman. Additionally, cryptographic hash functions like Secure Hash Algorithm (SHA) are used for data integrity verification. These algorithms work together to establish a secure and encrypted connection between a web server and a client.
+
+
+What is asymmetric and symmetric algorithm 
+Ans:
+Asymmetric and symmetric algorithms are two types of cryptographic algorithms used for securing data in various contexts.
+
+Symmetric encryption uses the same key for both encryption and decryption. Examples of symmetric algorithms include Advanced Encryption Standard (AES) and Data Encryption Standard (DES). Symmetric encryption is generally faster than asymmetric encryption but requires a secure method of key exchange.
+
+Asymmetric encryption, also known as public-key cryptography, involves the use of two related keys: a public key and a private key. The public key is used for encryption, while the private key is used for decryption. Examples of asymmetric algorithms include RSA (Rivest-Shamir-Adleman) and Elliptic Curve Cryptography (ECC). Asymmetric encryption is often used for secure key exchange, digital signatures, and securing communication between parties without requiring a shared secret key.
+
+
+How assymetric encryption works
+Ans:
+Asymmetric encryption, or public-key cryptography, works through the use of a pair of mathematically related keys—a public key and a private key. These keys have a special relationship such that data encrypted with one key can only be decrypted with the other corresponding key. Here's how the process generally works:
+
+Public key distribution: Each user has a public key that they distribute widely and a corresponding private key that they keep secret.
+
+Encryption: When User A wants to send a secure message to User B, User A uses User B's public key to encrypt the message.
+
+Decryption: User B receives the encrypted message and uses their private key to decrypt it.
+
+This method enables secure communication without the need for a shared secret key, making it especially useful for tasks like secure data transmission, digital signatures, and authentication in scenarios where parties haven't previously exchanged any confidential information.
+
+
+Cryptographic hash function 
+Ans:
+A cryptographic hash function is a mathematical algorithm that takes an input (or message) and produces a fixed-size string of characters, which is typically a hash value. This hash value is a unique representation of the input data, and any small change in the input data produces a significantly different hash value. Cryptographic hash functions are designed to be one-way functions, making it computationally infeasible to derive the original input data from the hash value.
+
+These hash functions are commonly used for data integrity verification, password storage, digital signatures, and various other security applications. Examples of cryptographic hash functions include Secure Hash Algorithm (SHA-2 and SHA-3), Message Digest Algorithm (MD5), and Secure Hash Algorithm 1 (SHA-1).
+
+
+SHA-1 vs SHA-2 vs SHA-3 vs MD5
+Ans:
+SHA-1, SHA-2, SHA-3, and MD5 are all different cryptographic hash functions, each with its own characteristics and security properties.
+
+MD5 (Message Digest Algorithm 5) is an earlier cryptographic hash function that produces a 128-bit (16-byte) hash value, but it is now considered to be insecure for most purposes due to vulnerabilities that can be exploited.
+
+SHA-1 (Secure Hash Algorithm 1) is a widely used cryptographic hash function that produces a 160-bit (20-byte) hash value. However, it is also considered to be insecure and has been largely deprecated due to vulnerabilities.
+
+SHA-2 (Secure Hash Algorithm 2) is a family of cryptographic hash functions that includes SHA-224, SHA-256, SHA-384, and SHA-512, among others. It provides stronger security than SHA-1 and is currently widely used in various applications.
+
+SHA-3 is the latest member of the Secure Hash Algorithm family, providing a set of hash functions designed to provide security, flexibility, and increased resistance to cryptanalytic attacks compared to SHA-2.
+
+In summary, while MD5 and SHA-1 are considered to be insecure and should be avoided, SHA-2 and SHA-3 are currently the preferred choices for cryptographic hash functions due to their stronger security properties.
+
+
+What encryption in https 2
+Ans:
+In HTTPS, the primary encryption protocol is the Transport Layer Security (TLS) protocol, which has replaced the earlier Secure Sockets Layer (SSL) protocol. TLS uses a combination of symmetric and asymmetric encryption algorithms for securing data transmission. The specific encryption protocols and algorithms used within TLS can include AES (Advanced Encryption Standard) for symmetric encryption, RSA (Rivest-Shamir-Adleman) or Elliptic Curve Cryptography (ECC) for asymmetric encryption, and various key exchange algorithms such as Diffie-Hellman. These algorithms work together to ensure the confidentiality, integrity, and authentication of data exchanged between a web server and a client.
+
+
+RSA
+Ans:
+RSA (Rivest-Shamir-Adleman) is one of the first and most widely used public-key cryptosystems. It is an asymmetric cryptographic algorithm used for secure data transmission, digital signatures, and key exchange. In the RSA algorithm, each user has a pair of mathematically related keys: a public key and a private key. The public key is used for encryption, while the private key is used for decryption. RSA's security is based on the practical difficulty of factoring the product of two large prime numbers, the factoring problem. It remains an important and widely used algorithm for securing communication and data transmission over insecure networks.
+
+
+AES
+Ans:
+AES (Advanced Encryption Standard) is a symmetric encryption algorithm that is widely used to secure sensitive data. It is a specification for the encryption of electronic data established by the U.S. National Institute of Standards and Technology (NIST). AES operates on fixed-size blocks of data, transforming each block individually. It uses cryptographic keys of 128, 192, or 256 bits to encrypt and decrypt data. AES has become the de facto standard for securing data and is used in various applications, including securing sensitive information, such as financial transactions, and protecting data during transmission over networks.
+
+
+Key exchange algorithm diffie hellman
+Ans:
+I believe you meant the Diffie-Hellman key exchange algorithm. Diffie-Hellman is a method for securely exchanging cryptographic keys over a public channel. It allows two parties to establish a shared secret key over an insecure medium without having any prior knowledge of each other. The algorithm enables secure communication by allowing both parties to agree upon a shared secret key that can be used for subsequent symmetric encryption of the data. Diffie-Hellman key exchange is widely used in various cryptographic protocols and forms an essential component of many secure communication protocols, including those used in HTTPS for securing web communications.
+
+
+Encryption in https/2
+Ans:
+In HTTP/2, the encryption mechanism remains the same as in HTTPS, relying primarily on the Transport Layer Security (TLS) protocol. The encryption protocols and algorithms used within HTTP/2 are similar to those used in HTTPS, with a focus on ensuring secure and private communication between web servers and clients. The combination of symmetric and asymmetric encryption algorithms, such as AES (Advanced Encryption Standard) for symmetric encryption and RSA (Rivest-Shamir-Adleman) or Elliptic Curve Cryptography (ECC) for asymmetric encryption, helps to establish secure connections and ensure the confidentiality, integrity, and authentication of data transmitted over the network.
+
+
+What is https/2
+Ans:
+HTTP/2 is the second major version of the Hypertext Transfer Protocol (HTTP). It is an evolution of the earlier HTTP/1.1 protocol and is designed to improve web performance and efficiency. HTTP/2 introduces several key features, including multiplexing, header compression, and server push, which allow for faster and more efficient communication between clients and servers. These improvements help reduce latency and enable more efficient use of network resources, resulting in faster loading times for web pages and improved overall performance.
+
+
+
+-------------------------------------------------------------------------------
+Pushing changes from server to client 
+Ans:
+Pushing changes from the server to the client typically refers to the process of sending updates or new data from the server to the client without the client explicitly requesting it. This can be achieved through various mechanisms such as server-sent events (SSE), WebSocket, or HTTP/2 server push.
+
+Server-sent events (SSE) is a technology that enables servers to push real-time updates to clients over HTTP. It allows a server to send new data to a web page in the form of events, which are received by the client as they occur.
+
+WebSocket is a communication protocol that provides full-duplex communication channels over a single TCP connection. It allows for interactive communication between the client and the server, enabling real-time data transfer in both directions.
+
+HTTP/2 server push is a feature that allows the server to proactively send resources to the client before they are explicitly requested. This can improve website performance by reducing the latency associated with requesting multiple resources separately.
+
+These mechanisms are commonly used in web applications that require real-time updates or efficient data transfer between the server and the client.
+
+
+
+What is TCP connection 
+Ans:
+TCP (Transmission Control Protocol) is a core protocol of the Internet protocol suite. It is responsible for providing reliable, ordered, and error-checked delivery of data between applications running on devices connected via the internet. TCP ensures that data packets are delivered intact and in the correct order by establishing a connection between the sender and the receiver before data transmission and maintaining this connection throughout the communication session.
+
+TCP is widely used in various applications, including web browsing, email, file transfer, and other types of data transmission that require reliable and accurate delivery of data. It forms the foundation for many internet-based communication protocols and plays a crucial role in ensuring the integrity and reliability of data transmission over the internet.
+
+
+TCP internal working in web browsing 
+Ans:
+In the context of web browsing, TCP works as follows:
+
+Initial connection: When a user requests a web page by entering a URL in a web browser, the browser initiates a TCP connection to the web server where the page is hosted.
+
+Three-way handshake: The process begins with a three-way handshake, during which the client and server exchange SYN (synchronize) and ACK (acknowledge) packets to establish a connection and synchronize sequence numbers.
+
+Data transfer: After the connection is established, the client sends an HTTP request to the server. The server processes the request and sends an HTTP response back to the client. This data transfer occurs in the form of TCP segments, which are small units of data transmitted over the TCP connection.
+
+Acknowledgment and error-checking: The client acknowledges the received segments, and both parties perform error-checking to ensure the reliable and ordered delivery of data. If any segments are lost or damaged during transmission, TCP retransmits them to maintain data integrity.
+
+Connection termination: After the data transfer is complete, the client and server exchange FIN (finish) packets to close the TCP connection gracefully.
+
+Overall, TCP ensures the reliable and accurate delivery of data between the web browser and the web server, forming the underlying foundation for the transmission of web pages and other web-related content.
+
+
+Server sent event 
+Ans:
+Server-Sent Events (SSE) is a web technology that enables servers to push real-time updates to clients over HTTP. With SSE, a persistent connection is established between the client and the server, allowing the server to send new data to the client as it becomes available, without the client needing to make additional requests.
+
+Key features of SSE include:
+
+Persistent connection: SSE allows the client to establish a long-lived HTTP connection with the server, enabling the server to push updates to the client over this connection.
+
+Unidirectional data flow: SSE enables the server to send data to the client, but not the other way around. This makes SSE suitable for scenarios where the client only needs to receive updates from the server.
+
+Simple API: SSE is straightforward to implement in web applications, as it uses a simple JavaScript API on the client side to handle incoming events and data from the server.
+
+SSE is commonly used in web applications that require real-time updates, such as live feeds, social media updates, or other types of continuously updating data. It provides a convenient way for servers to push data to clients without the need for the client to repeatedly poll the server for updates.
+
+
+Websockets 
+Ans:
+WebSockets is an advanced communication protocol that enables full-duplex communication channels over a single TCP connection. This protocol allows for interactive communication between a client and a server, facilitating real-time data transfer in both directions.
+
+Key features of WebSockets include:
+
+Full-duplex communication: WebSockets enable simultaneous two-way communication between the client and the server, allowing data to be sent and received at any time.
+
+Persistent connection: Unlike traditional HTTP connections, which are short-lived and stateless, WebSockets maintain a persistent connection, facilitating ongoing communication between the client and the server.
+
+Low overhead: WebSockets have minimal overhead, making them suitable for applications that require real-time data transfer, such as chat applications, online gaming, and financial trading platforms.
+
+WebSockets are widely used in various web applications that require real-time updates and interactive communication between the client and the server. They provide an efficient and reliable means of transmitting data in real time, offering improved performance compared to traditional HTTP connections for certain types of applications.
+
+
+Http/2 server push
+Ans:
+HTTP/2 server push is a feature that allows web servers to proactively send resources to the client before they are explicitly requested. With server push, the server can push multiple resources, such as images, stylesheets, and scripts, to the client's web browser along with the initial HTML response, reducing the need for additional round-trip requests.
+
+Key aspects of HTTP/2 server push include:
+
+Proactive resource delivery: The server can anticipate which additional resources the client will need based on the initial request and proactively push these resources to the client.
+
+Efficient data transmission: By pushing resources in advance, HTTP/2 server push reduces latency and optimizes the loading time of web pages, resulting in improved performance and a faster user experience.
+
+Stream prioritization: HTTP/2 server push allows for the prioritization of pushed resources, ensuring that critical resources are delivered to the client first for faster page rendering.
+
+HTTP/2 server push is a valuable optimization technique that enhances the efficiency of web page loading by minimizing the number of round-trip requests between the client and the server. It is particularly useful for delivering essential resources to the client's web browser in advance, leading to improved performance and a smoother user experience.
